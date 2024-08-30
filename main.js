@@ -272,3 +272,20 @@ initializeTop20();
 placeFruit()
 //1er déplacement auto : début partie
 automaticMoveSnake()
+
+const arrowLeft = document.getElementById('arrow-left')
+const arrowRight = document.getElementById('arrow-right')
+arrowLeft.onclick = function () {
+    document.body.classList.add('move-left');
+    alert("Pas d'autre jeu disponible pour le moment.")
+    setTimeout(() => {
+        document.body.classList.remove('move-left')
+    }, 1000);
+}
+arrowRight.onclick = function () {
+    document.body.classList.add('move-right');
+    alert("Pas d'autre jeu disponible pour le moment.");
+    setTimeout(() => {
+        document.body.classList.remove('move-right')
+    }, 1000);
+}
