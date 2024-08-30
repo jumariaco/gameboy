@@ -1,0 +1,154 @@
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    height:100vh;
+    position:relative;
+    background-image: url('images/gameboy.jpg');
+    background-size: center;
+    background-position: center;
+}
+
+#score{
+    position:absolute;
+    left:50%;
+    top:33%;
+    transform:translate(-50%,-50%);
+    border: 3px solid black;
+    border-radius: 3%;
+    width:259px;
+    height:249px;
+    text-align: center;
+    background-color: rgb(218, 172, 197);
+    display: none;
+    font-size: 12px;
+    overflow-y: auto;
+    max-height: 249px;
+}
+
+#score button {
+    background-color: rgb(211, 62, 124);
+    color : white;
+    padding : 5px;
+    border-radius: 16px 16px;
+}
+
+#player-name{
+    max-width: 240px;
+}
+
+.top20-list {
+    list-style-type: none; 
+    margin: 2px 0;
+    text-align: justify; 
+}
+
+.top20-list li {
+    padding: 5px 0;
+}
+
+#restartGameBtn {
+    margin: 5px; 
+}
+
+#newHighScore input {
+    width: 80%;
+    margin: 10px 0;
+}
+
+canvas {
+    position:absolute;
+    left:50%;
+    top:33%;
+    transform:translate(-50%,-50%);
+    border: 3px solid black;
+    border-radius: 3%;
+    width: 259px;
+    height: 249px;
+    background-color: white;
+}
+
+.arrow{
+    position:absolute;
+    width:2%;
+    height:5%;
+    background-color: transparent;
+    z-index:10;
+    cursor: pointer;
+}
+
+#arrowUp{
+    top:57%;
+    left:42%;
+}
+
+#arrowDown{
+    top:64%;
+    left:42%;
+}
+
+#arrowLeft{
+    top:60%;
+    left:40%;
+}
+
+#arrowRight{
+    top:60%;
+    left:44%;
+}
+
+
+
+@media (max-width: 658px) {
+    body {
+        background-image: url('images/gameboyMobile.jpg'); 
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 100%;
+    }
+
+    #score {
+        left:45%;
+        top:35%;
+        width: 240px;
+        height: 210px;
+    }
+
+    canvas {
+        left:45%;
+        top:35%;
+        width: 240px;
+        height: 210px;
+    }
+
+    .arrow{
+        position:absolute;
+        width:7%;
+        height:5%;
+        background-color: green;
+        z-index:10;
+        cursor: pointer;
+    }
+    
+    #arrowUp{
+        top:60%;
+        left:17%;
+    }
+    
+    #arrowDown{
+        top:70%;
+        left:17%;
+    }
+    
+    #arrowLeft{
+        top:65%;
+        left:11%;
+    }
+    
+    #arrowRight{
+        top:65%;
+        left:24%;
+    }
+}
